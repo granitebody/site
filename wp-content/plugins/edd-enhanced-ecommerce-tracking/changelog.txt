@@ -1,0 +1,72 @@
+*** EDD Enhanced eCommerce Tracking ***
+
+= 1.2.0.1 - 03/07/2019 =
+
+* [Fix] - Error loading file with case-sensitive hosting solutions
+
+= 1.2.0 - 01/07/2019 =
+
+* [Note] - This is a update with a lot of code rewrites/changes. Please check if you have any customizations / experience any unexpected behaviour; feel free to reach out if you have any questions.
+	* [Custom snippet] - A known snippet is to (re)move the pageview tracking script. This is now replaced by https://gist.github.com/JeroenSormani/af26582d26aef2184a3bb5f2990642f6
+
+* [Add] - Additional analytics.js and gtag.js tracking methods alongside the original Measurement Protocol, setting available.
+* [Improvement] - Improved EDD Recurring compatibility
+
+= 1.1.0 - 29/03/2018 =
+
+* [Add] - EDD Recurring compatibility - track recurring payments
+* [Add] - Anonymize IP feature - can come in handy for GDPR
+* [Add] - Compatibility for UA tracking code from Monster Insights Pro
+* [Add] - Debug mode - tracking all eCommerce related calls
+* [Fix] - UA code could disappear form main 'Extensions' settings page when saving another section
+
+
+= 1.0.8.1 - 02/09/2017 =
+* [Fix] - Hotfix patching bug introduced in 1.0.8
+
+= 1.0.8 - 01/09/2017 =
+* [Fix] - Monster Insights incompatibility issue - not getting the UA code properly.
+* [Fix] - Error can happen when updating EDD through dashboard
+
+= 1.0.7 - 04/06/2017 =
+* [Add] - Currency to the transaction request
+* [Fix] - Changed some class names with a typo (triple D)
+* [Fix] - 'price' attribute incorrect, was using the line price instead of unit price
+* [Add] - Monster Insights 6.0 (previously Yoast Google Analytics) compatibility
+
+
+= 1.0.6 - 23/08/2016 =
+* [Improvement] - Change casing in the events send. All event labels are capitalised, the rest is all lower case.
+* [Improvement] - Consistent code style
+
+
+= 1.0.5.2 - 24/05/2016 =
+* [Fix] - Fix PHP warning when HTTP_ACCEPT_LANGUAGE is not set
+
+= 1.0.5.1 - 14/05/2016 =
+* [Fix] - Bug introduced in 1.0.5 for servers running PHP 5.4 or lower
+
+= 1.0.5 - 13/05/2016 =
+* [Updater] - Update EDDSL Updater class
+* [Fix] - issue with events not being send to GA
+* [Fix] - Fix notice in cases that user language is not set
+
+= 1.0.4 - 00/00/2015 =
+* Improvement - Don't show tracking code when UA is empty
+
+= 1.0.3 - 29/07/2015 =
+* Improvement - Transaction tracking on edge cases
+* Improvement - Use Yoast's GA code when plugin is active
+* Fix - User language string
+
+= 1.0.2 - 19/05/2015 =
+* Add - Yoast Google Analytics Compatibility
+* Add - Possibility to exclude admin from tracking; http://docs.shopplugins.com/article/27-how-to-exclude-administrators-from-the-ecommerce-statistics
+* Improvement - Predefined class variables
+* Improvement - Send user IP with the API call instead of server IP. Makes sure locations are accurate
+
+= 1.0.1 - 19/02/2015 =
+* Fix - Notice when using [purchase_link] shortcode
+
+= 1.0.0 - 19/02/2015 =
+* Initial release

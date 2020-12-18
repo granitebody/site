@@ -1,0 +1,38 @@
+=Version 1.3.2, May 13, 2020=
+* Fixed: Purchase confirmation page was not properly resolving.
+* Fixed: Deleted products were not properly handled.
+
+=Version 1.3.1, December 5, 2017=
+* Fixed: Clickbank orders were coming back as $0 transactions with no products attached.
+
+=Version 1.3.0, June 20, 2017=
+* Altered ClickBank checkout process to leverage EDD's core "buy now" functionality for all ClickBank products. This eliminates the hard requirement to disable EDD's AJAX add-to-cart functionality, a setting that was removed in EDD 2.7.0.
+
+=Version 1.2.3, September 21, 2016=
+* Fixed a bug that caused a clickbank item number to be deleted if a post was updated.
+
+=Version 1.2.2, October 11, 2015=
+* Fixed a bug that allowed multiple EDD products to use the same clickbank item number, which would result in a "No download files found" error after purchase.
+
+=Version 1.2.1, June 4, 2014=
+* Corrected a major issue with session handling that resulted in $0 in purchase history reporting.
+
+=Version 1.2.0, May 28, 2014=
+* Refactored entire codebase
+* Added handler to prevent users from accidentally "repurchasing" items when clicking through from ClickBank.
+
+=Version 1.1.3, May 13, 2014=
+* Fixed a bug that prevented alphanumeric item names.
+* Fixed a fatal error during the IPN request
+
+=Version 1.1.2, May 12, 2014=
+* Fixed fatal error on Download edit screen.
+
+=Version 1.1.1, May 12, 2014=
+* Fixed a bug with the activation key.
+
+=Version 1.1.0=
+* Fixed an issue with the update notification.
+
+=Version 1.0.0=
+* Initial release.

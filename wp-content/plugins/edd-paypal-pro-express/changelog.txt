@@ -1,0 +1,44 @@
+Changelog
+
+= Version 1.4.4 - October 2, 2017 =
+* Fix: Completed payments could try and re-validate a PayPal Express token, resulting in a failed payment.
+
+= Version 1.4.3.3 - September 12, 2017 =
+
+* Fix: In-Context not working when Last Name is not entered.
+
+= Version 1.4.3.2 - September 5, 2017 =
+
+* Fix: PayPal In-Context checkout errors.
+* Fix: Bug with IPN currencies.
+
+= Version 1.4.3.1 - May 23, 2017 =
+
+* Update: IPN processing to work with eCheck.
+* Fix: In-Context triggering when required fields fail.
+
+= Version 1.4.3 - February 15, 2017 =
+
+* New: Ability to filter PayPal Express Checkout data.
+* New: Ability to display only country/zip or no billing fields at all.
+* Fix: Missing description in PayPal Pro payment.
+* Fix: In-Context not working on slower sites.
+
+= Version 1.4.2.6 - January 2, 2017 =
+
+* Fix: Additional issues with discounts and quantities.
+
+= Version 1.4.2.5 - November 25, 2016 =
+
+* Fix: Issue with discounts not being applied correctly
+* Fix: Compatibility with PayPal In-Context checkout.js changes.
+* Fix: Undefined Variable error.
+
+= Version 1.4.2.4 - September 21, 2016 =
+
+* Fix: Fatal error if EDD is not activated.
+* Fix: Failed transactions set as pending.
+
+= Version 1.4.2.3 - September 6, 2016 =
+
+* Update: Return url to use EDD uri.

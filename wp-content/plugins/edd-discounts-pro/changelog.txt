@@ -1,0 +1,68 @@
+1.4.8: 5/5/2017
+* Fix: Taxes still included on checkout with 100% discount.
+* Fix: Load Select2 only on the Discounts Pro Add/Edd screen.
+* Fix: Start and End dates should count from 00:00:00 to 23:59:59.
+
+1.4.7: 7/6/2016
+* Fix: price_id not passed to add_fee() method when cart item has a variable price
+
+1.4.6: 5/17/2016
+* Added HTML to Old Price output for easier customization
+
+1.4.5: 3/24/2016
+* Added composer file
+* Fixes tax issue with EDD where discounts are miscalculated when product prices inclusive of tax
+* Don't count free products toward cart quantity discount
+
+1.4.3: 8/31/2015
+* Fixed a bug in quantity discounts
+* Updated translation file template
+
+1.4.2: 7/13/2015
+* Fixed a bug that could cause fatal errors due to an improperly referenced function call
+
+1.4.1: 5/4/2015
+* Fixed bug in is_applicable
+
+1.4: 5/4/2015
+* Added support for commissions
+* Fixed from x products
+
+1.3.2 4/24/2015
+* Fixed an error where more than two discounts could not be applied due to WordPress's posts per page setting
+
+1.3.1: 3/25/2015
+* Fixed a Javascript error when not on the checkout page
+
+1.3: 3/24/2015
+* Added support for automatically re-drawing the checkout when item quantities are updated
+
+1.2: 2/1/2015
+* Added ability to show old price on purchase_link shortcode and output
+* Added ability to show new price on purchase_link shortcode and output
+* Fixed the old/new price options on edd_price outputs
+* Refactored the settings for edd_price outputs
+* Fixed variable pricing discounts
+* Fixed EDD detection before running
+* Fixed bug with users not saving properly
+
+1.1.1: 9/29/2014
+* Fixed an issue with the discount title not showing up in the cart
+
+1.1: 9/5/2014
+* Fixes issue where discount used might not have always been greatest discount
+* Rewrote how discounts pro calculates prices to go from calculating on each add to cart to 1 overall calculation.
+	This removes the need to clear the cart on each call, removes alot of logic from the program, and overall
+	simplifies how Discounts Pro works. This also significantly speeds up the plugin on the frontend.
+* Added frontend display option
+* Added ability to add start and end dates to discounts
+* Added ability to filter discounts by tags
+* Added cart threshold discount type
+* Added ability to filter discounts by previous customer
+* Fixes several bugs with calculations of discounts, particularly involving restriction of discounts to categories and from/each x product discounts
+
+1.0.1: 8/21/2014
+* Fixes issue with product quantity
+
+1.0: 8/11/2014
+ * Initial release

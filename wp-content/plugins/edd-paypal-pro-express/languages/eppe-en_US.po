@@ -1,0 +1,324 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: EDD PayPal pro and Express\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-20 14:09-0500\n"
+"PO-Revision-Date: 2016-05-20 14:09-0500\n"
+"Last-Translator: Pippin Williamson <pippin@pippinsplugins.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../edd-paypal-pro-express.php:72
+msgid "PayPal Pro"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:72
+msgid "Credit Card"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:73
+msgid "PayPal Express"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:73
+msgid "PayPal"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:105 ../edd-paypal-pro-express.php:218
+#: ../edd-paypal-pro-express.php:337
+msgid "You must enter your API keys in settings"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:194
+msgid "PayPal Pro Error"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:194
+#, php-format
+msgid "PayPal Pro returned an error while processing a payment. Details: %s"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:379
+msgid "Please confirm your payment"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:382
+msgid "PayPal Status:"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:384
+msgid "Phone:"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:386
+msgid "Email:"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:391
+msgid "Item Name"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:392
+msgid "Item Price"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:398
+msgid "Tax:"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:402
+msgid "Total:"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:426
+msgid "Confirm"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:563
+msgid "The user cancelled payment after going to PayPal"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:575
+msgid "PayPal Pro/Express"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:588
+msgid "PayPal Pro/Express<br>API Keys"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:589
+msgid "Configure your PayPal Pro and PayPal Express settings"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:600
+msgid "Live API Username"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:601
+msgid "Enter your live API username"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:607
+msgid "Live API Password"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:608
+msgid "Enter your live API password"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:614
+msgid "Live API Signature"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:615
+msgid "Enter your live API signature"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:621
+msgid "Live PayPal Merchant ID"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:622
+msgid ""
+"Enter your Live PayPal Merchant ID - NOTE: This is only required for In-"
+"Context Checkout<br>You can find your Merchant ID in your Account Profile in "
+"PayPal"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:628
+msgid "Test API Username"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:629
+msgid "Enter your test API username"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:635
+msgid "Test API Password"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:636
+msgid "Enter your test API password"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:642
+msgid "Test API Signature"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:643
+msgid "Enter your test API signature"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:649
+msgid "Test PayPal Merchant ID"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:650
+msgid ""
+"Enter your Test PayPal Merchant ID - NOTE: This is only required for In-"
+"Context Checkout<br>You can find your Merchant ID in your Account Profile in "
+"PayPal"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:656
+msgid "PayPal Express In-Context Checkout"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:657
+msgid "Enable PayPal Express In-Context Checkout"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:662
+msgid "Auto Confirm Express Payments?"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:663
+msgid ""
+"If checked, payments made with PayPal Express will be auto-confirmed once "
+"the user returns to your site from PayPal."
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:745
+msgid "Billing Address"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:748
+msgid "Billing City"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:751
+msgid "Billing Zip"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:754
+msgid "Credit Card Number"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:757
+msgid "CVC Code"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:760
+msgid "Credit Card Expiration Month"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:763
+msgid "Credit Card Expiration Year"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:877
+msgid "Refund failed. Please see the gateway log for more information."
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:881
+msgid "Refund processed successfully."
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:885 ../edd-paypal-pro-express.php:1379
+#: ../edd-paypal-pro-express.php:1477
+msgid ""
+"API Credentials are required in order to process a refund. Please visit the "
+"gateway settings page to add the correct credentials."
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:972 ../edd-paypal-pro-express.php:977
+msgid "PayPal IPN Error"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:972 ../edd-paypal-pro-express.php:977
+#, php-format
+msgid "Invalid IPN verification response. IPN data: %s"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:996
+#, php-format
+msgid "PayPal Refund Transaction ID: %s"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:1011
+msgid "PayPal IPN Response"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:1011
+#, php-format
+msgid "IPN Response for an unknown type: %s"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:1128 ../edd-paypal-pro-express.php:1131
+#: ../edd-paypal-pro-express.php:1134
+msgid "Billing "
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:1131
+msgid " / Postal Code"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:1134
+msgid " / Province"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:1137
+msgid "CVC"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:1141
+msgid "Name on the Card"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:1153
+msgid " is required."
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:1165
+msgid "The credit card number you entered is invalid"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:1170
+msgid "Please enter a valid expiration date"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:1240
+msgid "Refund Payment in PayPal"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:1352 ../edd-paypal-pro-express.php:1450
+msgid "Payment could not be refunded because the payment ID was invalid."
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:1366 ../edd-paypal-pro-express.php:1464
+msgid ""
+"There was an issue grabbing the transaction ID for the PayPal payment. This "
+"payment should be refunded from the PayPal website."
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:1418 ../edd-paypal-pro-express.php:1516
+msgid "Refund Failed"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:1418 ../edd-paypal-pro-express.php:1516
+#, php-format
+msgid "A refund failed to process: %s"
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:1419 ../edd-paypal-pro-express.php:1517
+#, php-format
+msgid "%s. This payment needs to be managed from the PayPal website directly."
+msgstr ""
+
+#: ../edd-paypal-pro-express.php:1428 ../edd-paypal-pro-express.php:1526
+#, php-format
+msgid ""
+"The refund request to PayPal failed: %s. This payment needs to be managed "
+"from the PayPal website directly."
+msgstr ""
+
+#: ../paypal/PayPalExpress.php:80 ../paypal/PayPalExpress.php:82
+#: ../paypal/PayPalPro.php:63
+msgid "Discount"
+msgstr ""

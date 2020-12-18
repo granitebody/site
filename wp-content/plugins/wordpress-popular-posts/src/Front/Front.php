@@ -76,47 +76,52 @@ class Front {
 	 */
 	public function enqueue_assets()
 	{
-	    # 2020-12-18 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
-        # "Eliminate the `/wp-json/wordpress-popular-posts/v1/popular-posts` request from the checkout page":
-        # https://github.com/granitebody/site/issues/2
-        if ('/checkout/' !== $_SERVER['REQUEST_URI']) {
-            // Enqueue WPP's stylesheet.
-            if ( $this->config['tools']['css'] ) {
-                $theme_file = get_stylesheet_directory() . '/wpp.css';
+		# 2020-12-18 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+		# "Eliminate the `/wp-json/wordpress-popular-posts/v1/popular-posts` request from the checkout page":
+		# https://github.com/granitebody/site/issues/2
+		if ('/checkout/' !== $_SERVER['REQUEST_URI']) {
+			// Enqueue WPP's stylesheet.
+			if ( $this->config['tools']['css'] ) {
+				$theme_file = get_stylesheet_directory() . '/wpp.css';
 
-                if ( @is_file($theme_file) ) {
-                    wp_enqueue_style('wordpress-popular-posts-css', get_stylesheet_directory_uri() . "/wpp.css", [], WPP_VERSION, 'all');
-                } // Load stock stylesheet
-                else {
-                    wp_enqueue_style('wordpress-popular-posts-css', plugin_dir_url(dirname(dirname(__FILE__))) . 'assets/css/wpp.css', [], WPP_VERSION, 'all');
-                }
-            }
+				if ( @is_file($theme_file) ) {
+					wp_enqueue_style('wordpress-popular-posts-css', get_stylesheet_directory_uri() . "/wpp.css", [], WPP_VERSION, 'all');
+				} // Load stock stylesheet
+				else {
+					wp_enqueue_style('wordpress-popular-posts-css', plugin_dir_url(dirname(dirname(__FILE__))) . 'assets/css/wpp.css', [], WPP_VERSION, 'all');
+				}
+			}
 
-            // Enqueue WPP's library.
-            $is_single = 0;
+			// Enqueue WPP's library.
+			$is_single = 0;
 
-            if (
-                ( 0 == $this->config['tools']['log']['level'] && ! is_user_logged_in() )
-                || ( 1 == $this->config['tools']['log']['level'] )
-                || ( 2 == $this->config['tools']['log']['level'] && is_user_logged_in() )
-            ) {
-                $is_single = Helper::is_single();
-            }
+			if (
+				( 0 == $this->config['tools']['log']['level'] && ! is_user_logged_in() )
+				|| ( 1 == $this->config['tools']['log']['level'] )
+				|| ( 2 == $this->config['tools']['log']['level'] && is_user_logged_in() )
+			) {
+				$is_single = Helper::is_single();
+			}
 
-            #wp_register_script('wpp-js', plugin_dir_url(dirname(dirname(__FILE__))) . 'assets/js/wpp.min.js', [], WPP_VERSION, false);
-            wp_register_script('wpp-js', plugin_dir_url(dirname(dirname(__FILE__))) . 'assets/js/wpp.js', [], WPP_VERSION, false);
-            $params = [
-                'sampling_active' => (int) $this->config['tools']['sampling']['active'],
-                'sampling_rate' => (int) $this->config['tools']['sampling']['rate'],
-                'ajax_url' => esc_url_raw(rest_url('wordpress-popular-posts/v1/popular-posts')),
-                'ID' => (int) $is_single,
-                'token' => wp_create_nonce('wp_rest'),
-                'lang' => function_exists('PLL') ? $this->translate->get_current_language() : 0,
-                'debug' => (int) WP_DEBUG
-            ];
-            wp_enqueue_script('wpp-js');
-            wp_add_inline_script('wpp-js', json_encode($params), 'before');
-        }
+			# 2020-12-18 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+            # Use
+			#   wp_register_script(
+            #       'wpp-js', plugin_dir_url(dirname(dirname(__FILE__))) . 'assets/js/wpp.js', [], WPP_VERSION, false
+            #   );
+            # if you want to load the non-minified version of the script (for debugging).
+			wp_register_script('wpp-js', plugin_dir_url(dirname(dirname(__FILE__))) . 'assets/js/wpp.min.js', [], WPP_VERSION, false);
+			$params = [
+				'sampling_active' => (int) $this->config['tools']['sampling']['active'],
+				'sampling_rate' => (int) $this->config['tools']['sampling']['rate'],
+				'ajax_url' => esc_url_raw(rest_url('wordpress-popular-posts/v1/popular-posts')),
+				'ID' => (int) $is_single,
+				'token' => wp_create_nonce('wp_rest'),
+				'lang' => function_exists('PLL') ? $this->translate->get_current_language() : 0,
+				'debug' => (int) WP_DEBUG
+			];
+			wp_enqueue_script('wpp-js');
+			wp_add_inline_script('wpp-js', json_encode($params), 'before');
+		}
 	}
 
 	/**
